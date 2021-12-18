@@ -7,7 +7,7 @@ get lib files/pictures
 
 Build a 12V digital thermostat to replace/enhance the analog and inexact one installed in the motorhome.
 
-## Requisites
+## Requisites that the project had to fullfill
 
 - The existing one must work even if this new one is powered off or broken.
 - No 'click' sound when switching on/off
@@ -15,6 +15,16 @@ Build a 12V digital thermostat to replace/enhance the analog and inexact one ins
 - Fun to build
 - Open to changes/improvements
 - Easy to maintain
+
+
+# Bill of materials
+
+- Arduino Nano R3
+- 3-digit 7-segment display (could be replaced with a LCD)
+- LM35 thermostat
+- NPN transistor (2N2222 or equivalent)
+
+[Bill of materials (pdf)](Bill_Of_Materials.pdf)
 
 # How to operate
 
@@ -64,7 +74,7 @@ Build a 12V digital thermostat to replace/enhance the analog and inexact one ins
 
 # Notes
 - Originally created to replace the Truma Trumatic C thermostat.
-- You may need to replace the 90KOhm resistor with one appropiated to your heating system. To choose the correct one,
+- You may need to replace the 90KOhm resistor with one appropiated to your heating system. To choose the correct one, try with different ones (or better infere with voltimeter/amperimeter) until the heater switches on and off when required.
 
 # Required
 
@@ -80,21 +90,13 @@ Build a 12V digital thermostat to replace/enhance the analog and inexact one ins
 - Use only the ATmega328P microcontroller instead of the Arduino
 - Use an Arduino Pro Mini
 - Use an Arduino Nano IoT and connect via bluetooth. Also, remove display and button
-
+- Use a LCD display instead of the 3-digit 7-segment one
 
 # Troubleshooting
-
-## Project in WSL but VS in Windows
-Python 3.8 cannot use UNC paths:
-https://github.com/platformio/platformio-core/issues/3417
 
 ## Monitor showing strange characters
 - Check that baud rates in the app and in platformIO.ini are equal
 - Be sure that the processor speed can handle it: http://wormfood.net/avrbaudcalc.php
-
-# Bill of materials
-
-[Bill of materials (pdf)](Bill_Of_Materials.pdf)
 
 # Images
 
