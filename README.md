@@ -12,10 +12,9 @@ Build a 12V digital thermostat to replace/enhance the analog and inexact one ins
 - The existing one must work even if this new one is powered off or broken.
 - No 'click' sound when switching on/off
 - 12V input up to 14/15V
-- Fun to build
+- Fun and easy to build
 - Open to changes/improvements
 - Easy to maintain
-
 
 # Bill of materials
 
@@ -23,6 +22,8 @@ Build a 12V digital thermostat to replace/enhance the analog and inexact one ins
 - 3-digit 7-segment display (could be replaced with a LCD)
 - LM35 thermostat
 - NPN transistor (2N2222 or equivalent)
+- perfboard
+- etc (check the Bill of Materials below)
 
 [Bill of materials (pdf)](Bill_Of_Materials.pdf)
 
@@ -111,3 +112,7 @@ Build a 12V digital thermostat to replace/enhance the analog and inexact one ins
 ![3D_up](images/3D_down.png)
 ![3D_up](images/3D_angleUp.png)
 ![3D_up](images/3D_angleDown.png)
+
+## One of the prototypes in the breadboard
+
+![prototype](images/prototype.jpg)
