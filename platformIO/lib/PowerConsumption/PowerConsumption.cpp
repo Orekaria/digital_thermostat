@@ -9,10 +9,10 @@ PowerConsumption::~PowerConsumption() {
 };
 
 void PowerConsumption::high() {
-    if (powerMode == 1) {
+    if (powerMode == CPUMode::high) {
         return;
     }
-    powerMode = 1;
+    powerMode = CPUMode::high;
     delay(10);
     CLKPR = 0x80; // enable change in clock frequency
     CLKPR = SPEED_FULL;
@@ -23,10 +23,10 @@ void PowerConsumption::high() {
 };
 
 void PowerConsumption::low() {
-    if (powerMode == 2) {
+    if (powerMode == CPUMode::low) {
         return;
     }
-    powerMode = 2;
+    powerMode = CPUMode::low;
     delay(10);
     CLKPR = 0x80; // enable change in clock frequency
     CLKPR = SPEED_REDUCED;

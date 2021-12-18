@@ -4,8 +4,13 @@
 #define POWERCONSUMPTION_H
 
 class PowerConsumption {
+    enum class CPUMode {
+        high,
+        low
+    };
+
 private:
-    uint8_t powerMode = -1;
+    CPUMode powerMode = CPUMode::high;
 public:
     PowerConsumption();
     ~PowerConsumption();
