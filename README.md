@@ -3,6 +3,19 @@ get lib files/pictures
 
 # Digital Thermostat with Arduino Nano
 
+## Goal
+
+Build a 12V digital thermostat to replace/enhance the analog and inexact one installed in the motorhome.
+
+## Requisites
+
+- The existing one must work even if this new one is powered off or broken.
+- No 'click' sound when switching on/off
+- 12V input up to 14/15V
+- Fun to build
+- Open to changes/improvements
+- Easy to maintain
+
 # How to operate
 
 1. Connect power, probe and termostat
@@ -78,3 +91,5 @@ https://github.com/platformio/platformio-core/issues/3417
 ## Monitor showing strange characters
 - Check that baud rates in the app and in platformIO.ini are equal
 - Be sure that the processor speed can handle it: http://wormfood.net/avrbaudcalc.php
+
+![Schematic](Schematic.jpg)
