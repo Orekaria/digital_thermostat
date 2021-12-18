@@ -1,0 +1,27 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "platformIO",
+		},
+		{
+			"path": "proteus"
+		}
+	],
+	"settings": {
+		"files.exclude": {
+			"platformIO": true,
+			"proteus": true,
+			"Project Backups": true,
+			".vscode": true,
+			".pio": true,
+		},
+		"files.associations": {
+			"*.conf": "ssh_config",
+			"atomic": "cpp",
+			"xutility": "cpp"
+		}
+	}
+}
