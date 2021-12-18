@@ -5,36 +5,27 @@ get lib files/pictures
 
 ## Goal
 
-Build a 12V digital thermostat to replace/enhance the analog and inexact one installed in the motorhome.
+Build a 12V digital thermostat to replace/enhance the analog and inexact one installed in the motorhome
 
 ## Requisites that the project had to fullfill
 
 - The existing one must work even if this new one is powered off or broken.
 - No 'click' sound when switching on/off
-- 12V input up to 14/15V
+- 12V powered (up to 14V). No batteries
+- If possible, detect when the motorhome is powered on/connected to power surge
 - Fun and easy to build
 - Open to changes/improvements
 - Easy to maintain
 
-# Bill of materials
+# Highlights
 
-- Arduino Nano R3
-- 3-digit 7-segment display (could be replaced with a LCD)
-- LM35 thermostat
-- NPN transistor (2N2222 or equivalent)
-- perfboard
-- etc (check the Bill of Materials below)
+- If this themostat is off power, the heating system falls back to the original thermostat
+- Notice that both thermostats are active at the same time. The thermostat set to the hi
+  - The original heater is still operational. Thus the cooler temperature must be set. Otherwise, the thermostat with the hotter setting will prevail.
+- Solid state rele (not 'click' sound)
+- Auto-disconnects when an spike in the 12V power surge is detected, thanks to the voltimeter added. In a vehicle, it usually means that it has been started or connected to an external power supply.
 
-[Bill of materials (pdf)](Bill_Of_Materials.pdf)
-
-# How to operate
-
-1. Connect power, probe and termostat
-2. Select the cooler position in the original heater system
-3. Use the potentiometer to select the desired temperature
-4. Press the buttom to see the ambient temperature
-
-# Included:
+# Included in this repository
 
 - Schematic
 - PCB layout
@@ -44,21 +35,13 @@ Build a 12V digital thermostat to replace/enhance the analog and inexact one ins
 - Proteus project
   - Arduino library
   - User library
+- Bill of materials
 
-# Highlights
+# Skills/tools required
 
-- If this themostat is off power, the heating system falls back to the original thermostat
-- Notice that both thermostats are active at the same time. The thermostat set to the hi
-  - The original heater is still operational. Thus the cooler temperature must be set. Otherwise, the thermostat with the hotter setting will prevail.
-- Solid state rele (not 'click' sound)
-- Auto-disconnects when an spike in the 12V power surge is detected, thanks to the voltimeter included. In a vehicle, it usually means that it has been started or connected to an external power supply.
-
-# Installation
-
-- Place the Thermostat between the heater and its temperature probe.
-  - Connect the heater wires to the HEATER connector, pin 1 is '+', pin 2 is 'GND'
-  - Connect the temperature probe to the PROBE connector, pin 1 is '+', pin 2 is 'GND'
-- Connect to a 12V power surge.
+- Basic electronic knowledge
+- Basic software development knowledge
+- Tools: computer, perfboard, arduino Nano R3, voltimeter, solder, etc
 
 # Schematic development
 
@@ -73,15 +56,34 @@ Build a 12V digital thermostat to replace/enhance the analog and inexact one ins
 - Set the correct platform and baud rate (115200)
 - Change the DEBUG variable to true, to see the log
 
+# Bill of materials
+
+- Arduino Nano R3
+- 3-digit 7-segment display (could be replaced with a LCD)
+- LM35 thermostat
+- NPN transistor (2N2222 or equivalent)
+- perfboard
+- etc (check the Bill of Materials below)
+
+[Bill of materials (pdf)](Bill_Of_Materials.pdf)
+
+# Installation
+
+- Place the Thermostat between the heater and its temperature probe.
+  - Connect the heater wires to the HEATER connector, pin 1 is '+', pin 2 is 'GND'
+  - Connect the temperature probe to the PROBE connector, pin 1 is '+', pin 2 is 'GND'
+- Connect to a 12V power surge.
+
+# How to operate
+
+1. Connect power, probe and termostat
+2. Select the cooler position in the original heater system
+3. Use the potentiometer to select the desired temperature
+4. Press the buttom to see the ambient temperature
+
 # Notes
 - Originally created to replace the Truma Trumatic C thermostat.
 - You may need to replace the 90KOhm resistor with one appropiated to your heating system. To choose the correct one, try with different ones (or better infere with voltimeter/amperimeter) until the heater switches on and off when required.
-
-# Required
-
-- Basic electronic knowledge
-- Basic software development knowledge
-- Tools: computer, perfboard, arduino Nano R3, voltimeter, solder, etc
 
 # Possible changes/improvements
 
