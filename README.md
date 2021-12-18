@@ -1,6 +1,3 @@
-# TODO
-get lib files/pictures
-
 # Digital Thermostat with Arduino Nano
 
 ## Goal
