@@ -98,10 +98,10 @@ https://github.com/platformio/platformio-core/issues/3417
 ![Schematic](images/Schematic.png)
 
 ## PCB Layout
-![PCB_Layout](images(images/PCB_Layout.png)
+![PCB_Layout](images/PCB_Layout.png)
 
 ## 3D
 ![3D_up](images/3D_up.png)
-![3D_up](images/3D_down.png.png)
+![3D_up](images/3D_down.png)
 ![3D_up](images/3D_angleUp.png)
 ![3D_up](images/3D_angleDown.png)
