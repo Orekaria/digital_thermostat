@@ -92,4 +92,5 @@ https://github.com/platformio/platformio-core/issues/3417
 - Check that baud rates in the app and in platformIO.ini are equal
 - Be sure that the processor speed can handle it: http://wormfood.net/avrbaudcalc.php
 
-![Schematic](Schematic.jpg)
+![Schematic](Schematic.png)
+![PCB_Layout](PCB_Layout.png)
