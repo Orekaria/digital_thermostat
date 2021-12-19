@@ -11,7 +11,6 @@ Heater::~Heater() {
 bool Heater::setOnOff(bool unlock, float ambientTemp, float desiredTemp) {
     if (unlock) {
         _isHeaterLocked = false;
-        _lastHeaterState = -1;
     }
 
     bool onOff = LOW;
@@ -30,6 +29,9 @@ bool Heater::setOnOff(bool unlock, float ambientTemp, float desiredTemp) {
     }
     _lastHeaterState = onOff;
     digitalWrite(_pin, onOff);
+#if DEBUG == true
+    Utils::log("heater: " + String(_lastHeaterState == HIGH ? "ON" : "OFF" ) + CARRIAGE_RETURN);
+#endif
     return true;
 }
 
