@@ -29,10 +29,10 @@ Thermostat::~Thermostat() {
 }
 
 float Thermostat::readLM35() {
-    float lm35Reading = analogRead(_pin); // accuracy: 0.5 celsius steps
-    float voltage = lm35Reading * 5.0 / 1024.0;
+    float adcValue = analogRead(_pin); // accuracy: 0.5 celsius steps
+    float voltage = adcValue * AREF / 1024.0;
     float ambientTempFix = Utils::roundToDot5(voltage * 100.0);
-    // Utils::log(", lm35Reading: " + String(lm35Reading));
+    // Utils::log(", adcValue : " + String(adcValue ));
     // Utils::log(", voltage: " + String(voltage, 4));
     // Utils::log(", tempRaw: " + String(ambientTempFix, 2));
 

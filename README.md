@@ -51,7 +51,9 @@ Build a 12V digital thermostat to replace/enhance the analog and inexact one ins
 
 - Get VisualStudio Code, install PlatformIO
 - Set the correct platform and baud rate (115200)
-- Change the DEBUG variable to true, to see the log
+- Customize the Shared.h parameters
+  - Set the correct REF<->GND voltage
+  - Change the DEBUG variable to true, to see the log
 
 # Bill of materials
 

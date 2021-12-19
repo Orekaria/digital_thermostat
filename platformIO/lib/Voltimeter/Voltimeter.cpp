@@ -1,4 +1,5 @@
 #include <Voltimeter.h>
+#include <Shared.h>
 
 Voltimeter::Voltimeter(uint8_t pin) {
     _pin = pin;
@@ -11,7 +12,7 @@ Voltimeter::~Voltimeter() {
 
 float Voltimeter::readVin() {
     int pinRead = analogRead(_pin); // Probe Input
-    float vin = pinRead * 5.0 / 1024.0; // Pin to Vin
+    float vin = pinRead * AREF / 1024.0; // Pin to Vin
     return vin;
 }
 
