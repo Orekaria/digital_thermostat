@@ -30,8 +30,6 @@
 #define LONG_PRESS (uint16_t) (2000/(uint8_t)(pow(2, (uint8_t)SPEED_FULL))) // ticks
 #define RELE 13
 
-#define CARRIAGE_RETURN (String) "\n\r"
-
 Display display = Display(AUTO_DISPLAY_OFF_TIME / BEAT);
 Heater heater = Heater(RELE);
 Voltimeter voltimeter = Voltimeter(VCC);

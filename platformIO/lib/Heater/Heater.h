@@ -1,5 +1,6 @@
 #include <Arduino.h>
 #include <Shared.h>
+#include <Utils.h>
 
 #ifndef HEATER_H
 #define HEATER_H
