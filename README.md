@@ -86,13 +86,20 @@ Build a 12V digital thermostat to replace/enhance the analog and inexact one ins
 
 # Possible changes/improvements
 
-- Use an optocoupler instead of a relay
-- Add a buzzer
+- Microcontroller
+  - Use only the ATmega328P microcontroller instead of the Arduino
+  - Use an Arduino Pro Mini/Micro
+  - Use a ESP32. Also remove display and button
+  - Use an Arduino Nano IoT and connect via bluetooth. Also, remove display and button
+- Switch
+  - Use a depletion N-Type MOSFET instead of a relay and a transistor
+  - Use an optocoupler instead of a solid state relay and a transistor
+  - Use a regular relay instead of a solid state relay
+- Display
+  - Use a 7447 to reduce from 7 to 4 the digital outputs required for the display
+  - Use a LCD display instead of the 3-digit 7-segment one
 - Use a thermistor instead of the LM35
-- Use only the ATmega328P microcontroller instead of the Arduino
-- Use an Arduino Pro Mini
-- Use an Arduino Nano IoT and connect via bluetooth. Also, remove display and button
-- Use a LCD display instead of the 3-digit 7-segment one
+- Add a buzzer
 
 # Troubleshooting
 
