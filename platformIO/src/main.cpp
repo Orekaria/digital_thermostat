@@ -1,6 +1,6 @@
 /*
   Author: Orekaria
-  Thermostast for vehicles with Arduino
+  DIY digital thermostat for vehicles with Arduino
 */
 
 #include <Arduino.h>
