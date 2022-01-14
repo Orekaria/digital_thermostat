@@ -25,7 +25,7 @@ Build a 12V digital thermostat to replace/enhance the analog, inexact and volubl
 - Detect when the motorhome is powered on/connected to power surge
   - using an in-built voltimeter
 - Detect when the motorhome is moving => switch off the heater
-  - using a accelerometer
+  - using a accelerometer (TODO)
 - 12V powered (up to 14V). No batteries
   - direct connection to the motorhome battery
 - Fun and easy to build
